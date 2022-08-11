@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+     Scanner scan = new Scanner(System.in);
+        System.out.println("Are you having a good day?");
+        String x = scan.nextLine();
+        char y = x.charAt(0);
+        
+        if (y == 'Y' || y == 'y')
+        {
+            System.out.println("That is good to hear!");
+            
+        }
+        else if (y =='N' || y == 'n')
+        {
+            System.out.println("I am sorry to hear that.");
+        }
+        else
+            System.out.println(" Enter either yes or no please.");
+            
+    }
+}
